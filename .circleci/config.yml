@@ -1,0 +1,37 @@
+version: 2
+
+jobs:
+  ios:
+    macos:
+      xcode: "10.2.0"
+    environment:
+      FL_OUTPUT_DIR: output
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+    shell: /bin/bash --login -o pipefail
+    steps:
+      - checkout
+      - run: bundle install
+      - restore_cache:
+          keys:
+            - v1-carthage-{{ arch }}-{{ checksum "Cartfile.resolved" }}
+      - run:
+          name: Install dependencies
+          command: |
+            bin/bootstrap-if-needed
+      - save_cache:
+          key: v1-carthage-{{ arch }}-{{ checksum "Cartfile.resolved" }}
+          paths:
+            - "Carthage"
+      - run:
+          name: Fastlane
+          command: bundle exec fastlane build build_number:$CIRCLE_BUILD_NUM appcenter_token:$APPCENTER_TOKEN
+
+workflows:
+  version: 2
+  ios:
+    jobs:
+      - ios:
+          filters:
+            branches:
+              only: master
