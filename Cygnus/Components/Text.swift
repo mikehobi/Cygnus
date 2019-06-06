@@ -6,36 +6,42 @@
 //  Copyright © 2019 Instrument Marketing. All rights reserved.
 //
 
-import UIKit
 import BonMot
+import UIKit
 
 class Text: UILabel {
-    
     var stringStyle: StringStyle!
 
     override var text: String? {
         didSet {
             if let text = text {
-                self.updateText(text)
+                updateText(text)
             }
         }
     }
-    
+
     init(_ text: String, _ options: StringStyle.Part...) {
         super.init(frame: .zero)
-        self.numberOfLines = 0
-        self.backgroundColor = .clear
-        
+        numberOfLines = 0
+        backgroundColor = .clear
+
         stringStyle = StringStyle(options)
-        self.attributedText = text.styled(with: stringStyle)
+        attributedText = text.styled(with: stringStyle)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    init(_ text: String, style: StringStyle) {
+        super.init(frame: .zero)
+        numberOfLines = 0
+        backgroundColor = .clear
+
+        attributedText = text.styled(with: style)
+    }
+
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func updateText(_ text: String) {
-        self.attributedText = text.styled(with: stringStyle)
+        attributedText = text.styled(with: stringStyle)
     }
-    
 }

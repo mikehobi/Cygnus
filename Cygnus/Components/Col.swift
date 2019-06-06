@@ -9,7 +9,6 @@
 import UIKit
 
 class Col: View {
-    
     override func setupDefaults() {
         stack.alignment = .fill
         stack.distribution = .equalSpacing

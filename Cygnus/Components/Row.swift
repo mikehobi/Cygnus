@@ -9,7 +9,6 @@
 import UIKit
 
 class Row: View {
-    
     override func setupDefaults() {
         stack.alignment = .leading
         stack.distribution = .fillEqually

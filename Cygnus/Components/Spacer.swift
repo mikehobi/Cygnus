@@ -9,12 +9,31 @@
 import UIKit
 
 class Spacer: UIView {
-    
+    enum SpacerType {
+        case fillHorizontal
+        case fillVertical
+
+        var priority: UILayoutPriority {
+            switch self {
+            case .fillVertical, .fillHorizontal:
+                return .defaultLow
+            }
+        }
+
+        var axis: NSLayoutConstraint.Axis {
+            switch self {
+            case .fillVertical:
+                return .vertical
+            case .fillHorizontal:
+                return .horizontal
+            }
+        }
+    }
+
     init(height: CGFloat? = nil, width: CGFloat? = nil) {
         super.init(frame: .zero)
-        
-        
-        self.snp.makeConstraints{ make in
+
+        snp.makeConstraints { make in
             if let height = height {
                 make.height.equalTo(height)
             }
@@ -24,8 +43,13 @@ class Spacer: UIView {
             }
         }
     }
-    
-    required init?(coder aDecoder: NSCoder) {
+
+    init(_ type: SpacerType) {
+        super.init(frame: .zero)
+        setContentHuggingPriority(type.priority, for: type.axis)
+    }
+
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
