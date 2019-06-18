@@ -12,15 +12,20 @@ public struct StackViewControllerOptions {
     public var backgroundColor: UIColor?
     public var distribution: UIStackView.Distribution?
     public var alignment: UIStackView.Alignment?
-    public var spacing: CGFloat?
     public var disableScroll: Bool?
+    public var scrollTopAlignment: ScrollTopAlignment?
+
+    public enum ScrollTopAlignment {
+        case safeArea
+        case top
+    }
 
     public enum Part {
         case backgroundColor(UIColor)
         case distribution(UIStackView.Distribution)
         case alignment(UIStackView.Alignment)
-        case spacing(CGFloat)
         case disableScroll(Bool)
+        case scrollTopAlignment(ScrollTopAlignment)
     }
 
     public init(_ parts: Part...) {
@@ -33,7 +38,6 @@ public struct StackViewControllerOptions {
             update(part: part)
         }
     }
-
     public init() {}
 
     mutating func update(part option: Part) {
@@ -44,15 +48,16 @@ public struct StackViewControllerOptions {
             self.backgroundColor = backgroundColor
         case let .distribution(distribution):
             self.distribution = distribution
-        case let .spacing(spacing):
-            self.spacing = spacing
         case let .disableScroll(disableScroll):
             self.disableScroll = disableScroll
+        case let .scrollTopAlignment(scrollTopAlignment):
+            self.scrollTopAlignment = scrollTopAlignment
         }
     }
 }
 
 class StackViewController: UIViewController {
+
     /// Changes the status bar appearance
     var statusBarStyle: UIStatusBarStyle = .default
     var isStatusBarHidden: Bool = false
@@ -69,10 +74,21 @@ class StackViewController: UIViewController {
         return .fade
     }
 
-    func updateStatusBar(style: UIStatusBarStyle, isHidden: Bool = false) {
+    func updateStatusBar(style: UIStatusBarStyle, isHidden: Bool = false, isAnimated: Bool = true, delay: TimeInterval = 0) {
         statusBarStyle = style
         isStatusBarHidden = isHidden
-        setNeedsStatusBarAppearanceUpdate()
+
+        if isAnimated {
+
+            UIView.animate(withDuration: 0.25, delay: delay, animations: {
+                self.setNeedsStatusBarAppearanceUpdate()
+            })
+
+        } else {
+
+            self.setNeedsStatusBarAppearanceUpdate()
+
+        }
     }
 
     // Views
@@ -84,22 +100,39 @@ class StackViewController: UIViewController {
     init(_ views: [UIView], options: [StackViewControllerOptions.Part]) {
         super.init(nibName: nil, bundle: nil)
 
-        setupDefaults()
+        self.setupDefaults()
 
         setupViews(views, options: options)
     }
 
     init() {
         super.init(nibName: nil, bundle: nil)
-        setupDefaults()
+        self.setupDefaults()
+    }
+
+    func addView(_ view: UIView) {
+        self.stack.addArrangedSubview(view)
+    }
+
+    func addView(_ view: UIView, at index: Int) {
+        if index > self.stack.arrangedSubviews.count {
+            print("Invalid index")
+            return
+        }
+        self.stack.insertArrangedSubview(view, at: index)
+    }
+
+    func addViews(_ views: [UIView]) {
+        self.stack.addArrangedSubviews(views)
     }
 
     /// Sets up the defaults
     func setupDefaults() {
-        // Default backgroundColor
-        view.backgroundColor = .white
 
-        edgesForExtendedLayout = []
+        // Default backgroundColor
+        self.view.backgroundColor = .white
+
+        self.edgesForExtendedLayout = []
 
         // Defaults for stack
         stack.axis = .vertical
@@ -108,7 +141,7 @@ class StackViewController: UIViewController {
 
         // Defaults for scroll
         scroll.contentInsetAdjustmentBehavior = .never
-        scroll.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        scroll.contentInset = .zero
     }
 
     /// Sets up views into are stack view and applies options
@@ -117,6 +150,7 @@ class StackViewController: UIViewController {
     ///   - views: Views to be added to stackView
     ///   - options: Options for our view controller, stackview and scrollview
     func setupViews(_ views: [UIView], options: [StackViewControllerOptions.Part]) {
+
         // Add views
         for view in views {
             stack.addArrangedSubview(view)
@@ -135,13 +169,14 @@ class StackViewController: UIViewController {
             make.edges.equalToSuperview()
         }
 
+
         let viewOptions = StackViewControllerOptions(options)
-        applyOptions(viewOptions)
+        self.applyOptions(viewOptions)
     }
 
     func applyOptions(_ viewOptions: StackViewControllerOptions) {
         if let backgroundColor = viewOptions.backgroundColor {
-            view.backgroundColor = backgroundColor
+            self.view.backgroundColor = backgroundColor
         }
 
         if let alignment = viewOptions.alignment {
@@ -152,16 +187,26 @@ class StackViewController: UIViewController {
             stack.distribution = distribution
         }
 
-        if let spacing = viewOptions.spacing {
-            stack.spacing = spacing
-        }
-
         if let disableScroll = viewOptions.disableScroll {
             scroll.isScrollEnabled = !disableScroll
         }
+
+        if let scrollTopAlignment = viewOptions.scrollTopAlignment {
+            switch scrollTopAlignment {
+            case .top:
+                scroll.snp.makeConstraints { make in
+                    make.edges.equalToSuperview()
+                }
+            case .safeArea:
+                scroll.snp.remakeConstraints { make in
+                    make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+                    make.left.right.bottom.equalToSuperview()
+                }
+            }
+        }
     }
 
-    required init?(coder _: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7E26C8B62281FF1D0044AF77 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E26C8B52281FF1D0044AF77 /* BonMot.framework */; };
+		7E2A9F5F22A9861200215CD5 /* UIEdgeInsets+x.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A9F5E22A985AD00215CD5 /* UIEdgeInsets+x.swift */; };
+		7E2A9F6122A9C4EE00215CD5 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A9F6022A9C4EE00215CD5 /* ThirdVC.swift */; };
 		7E3C08B321B854020074CBD6 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C08B221B854020074CBD6 /* Hero.framework */; };
 		7E64893321B705910033D5AD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E64893221B705910033D5AD /* SecondViewController.swift */; };
 		7E7C869C21B1F61F003F24DA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7C869B21B1F61F003F24DA /* SnapKit.framework */; };
@@ -18,6 +20,10 @@
 		7EA26901228DFF0500FE3D05 /* Col.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA268FC228DFF0500FE3D05 /* Col.swift */; };
 		7EA26903228E013300FE3D05 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA26902228E013300FE3D05 /* Spacer.swift */; };
 		7EA26905228E04AB00FE3D05 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA26904228E04AB00FE3D05 /* Button.swift */; };
+		7EC5A81F22B9A90A00B4F27F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A81E22B9A90A00B4F27F /* Image.swift */; };
+		7EC5A82122B9A96D00B4F27F /* UIStackView+addArrangedSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A82022B9A96D00B4F27F /* UIStackView+addArrangedSubviews.swift */; };
+		7EC5A82322B9A9AA00B4F27F /* UIImageView+sizeToSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A82222B9A9AA00B4F27F /* UIImageView+sizeToSuperview.swift */; };
+		7EC5A82522B9A9CD00B4F27F /* UIImage+getRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A82422B9A9CD00B4F27F /* UIImage+getRatio.swift */; };
 		7EC95EAE21B1F2FB00E7FF4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC95EAD21B1F2FB00E7FF4C /* AppDelegate.swift */; };
 		7EC95EB021B1F2FB00E7FF4C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC95EAF21B1F2FB00E7FF4C /* MainViewController.swift */; };
 		7EC95EB521B1F2FC00E7FF4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC95EB421B1F2FC00E7FF4C /* Assets.xcassets */; };
@@ -26,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		7E26C8B52281FF1D0044AF77 /* BonMot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BonMot.framework; path = Carthage/Build/iOS/BonMot.framework; sourceTree = "<group>"; };
+		7E2A9F5E22A985AD00215CD5 /* UIEdgeInsets+x.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+x.swift"; sourceTree = "<group>"; };
+		7E2A9F6022A9C4EE00215CD5 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		7E3C08B221B854020074CBD6 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hero.framework; path = Carthage/Build/iOS/Hero.framework; sourceTree = "<group>"; };
 		7E64893221B705910033D5AD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7E7C869B21B1F61F003F24DA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
@@ -36,6 +44,10 @@
 		7EA268FC228DFF0500FE3D05 /* Col.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Col.swift; sourceTree = "<group>"; };
 		7EA26902228E013300FE3D05 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		7EA26904228E04AB00FE3D05 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		7EC5A81E22B9A90A00B4F27F /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		7EC5A82022B9A96D00B4F27F /* UIStackView+addArrangedSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+addArrangedSubviews.swift"; sourceTree = "<group>"; };
+		7EC5A82222B9A9AA00B4F27F /* UIImageView+sizeToSuperview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+sizeToSuperview.swift"; sourceTree = "<group>"; };
+		7EC5A82422B9A9CD00B4F27F /* UIImage+getRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+getRatio.swift"; sourceTree = "<group>"; };
 		7EC95EAA21B1F2FB00E7FF4C /* Cygnus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cygnus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC95EAD21B1F2FB00E7FF4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EC95EAF21B1F2FB00E7FF4C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,10 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E2A9F5D22A9857800215CD5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7EC5A82222B9A9AA00B4F27F /* UIImageView+sizeToSuperview.swift */,
+				7EC5A82022B9A96D00B4F27F /* UIStackView+addArrangedSubviews.swift */,
+				7E2A9F5E22A985AD00215CD5 /* UIEdgeInsets+x.swift */,
+				7EC5A82422B9A9CD00B4F27F /* UIImage+getRatio.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7E64893121B705230033D5AD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				7EC95EAF21B1F2FB00E7FF4C /* MainViewController.swift */,
+				7E2A9F6022A9C4EE00215CD5 /* ThirdVC.swift */,
 				7E64893221B705910033D5AD /* SecondViewController.swift */,
 			);
 			path = Scenes;
@@ -80,13 +104,14 @@
 		7EA268F7228DFEF900FE3D05 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				7EA26902228E013300FE3D05 /* Spacer.swift */,
 				7EA268FA228DFF0500FE3D05 /* StackViewController.swift */,
+				7EA26902228E013300FE3D05 /* Spacer.swift */,
 				7EA268F9228DFF0500FE3D05 /* Row.swift */,
 				7EA268FC228DFF0500FE3D05 /* Col.swift */,
 				7EA268FB228DFF0500FE3D05 /* View.swift */,
 				7EA26904228E04AB00FE3D05 /* Button.swift */,
 				7EA268F8228DFF0500FE3D05 /* Text.swift */,
+				7EC5A81E22B9A90A00B4F27F /* Image.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -114,6 +139,7 @@
 				7EC95EAD21B1F2FB00E7FF4C /* AppDelegate.swift */,
 				7E64893121B705230033D5AD /* Scenes */,
 				7EA268F7228DFEF900FE3D05 /* Components */,
+				7E2A9F5D22A9857800215CD5 /* Extensions */,
 				7EC95EB421B1F2FC00E7FF4C /* Assets.xcassets */,
 				7EC95EB621B1F2FC00E7FF4C /* LaunchScreen.storyboard */,
 				7EC95EB921B1F2FC00E7FF4C /* Info.plist */,
@@ -154,6 +180,7 @@
 				TargetAttributes = {
 					7EC95EA921B1F2FB00E7FF4C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -221,13 +248,19 @@
 				7EC95EB021B1F2FB00E7FF4C /* MainViewController.swift in Sources */,
 				7E64893321B705910033D5AD /* SecondViewController.swift in Sources */,
 				7EA26905228E04AB00FE3D05 /* Button.swift in Sources */,
+				7EC5A82122B9A96D00B4F27F /* UIStackView+addArrangedSubviews.swift in Sources */,
 				7EA26901228DFF0500FE3D05 /* Col.swift in Sources */,
 				7EA268FD228DFF0500FE3D05 /* Text.swift in Sources */,
 				7EA26903228E013300FE3D05 /* Spacer.swift in Sources */,
+				7EC5A81F22B9A90A00B4F27F /* Image.swift in Sources */,
 				7EA268FF228DFF0500FE3D05 /* StackViewController.swift in Sources */,
 				7EA268FE228DFF0500FE3D05 /* Row.swift in Sources */,
+				7E2A9F6122A9C4EE00215CD5 /* ThirdVC.swift in Sources */,
 				7EA26900228DFF0500FE3D05 /* View.swift in Sources */,
 				7EC95EAE21B1F2FB00E7FF4C /* AppDelegate.swift in Sources */,
+				7EC5A82522B9A9CD00B4F27F /* UIImage+getRatio.swift in Sources */,
+				7EC5A82322B9A9AA00B4F27F /* UIImageView+sizeToSuperview.swift in Sources */,
+				7E2A9F5F22A9861200215CD5 /* UIEdgeInsets+x.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +415,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.instrumentInHouse.Cygnus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -409,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.instrumentInHouse.Cygnus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};

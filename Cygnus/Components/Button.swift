@@ -36,7 +36,6 @@ public struct ButtonOptions {
             update(part: part)
         }
     }
-
     public init() {}
 
     mutating func update(part stylePart: Part) {
@@ -70,111 +69,112 @@ public struct ButtonOptions {
 }
 
 class Button: UIButton {
-    typealias SelfClosure = ((UIButton) -> Void)?
 
     static let DefaultButtonOptions: ButtonOptions = ButtonOptions([
         .height(60),
         .color(.black),
         .borderColor(.clear),
         .backgroundColor(.white),
-    ])
+        ])
 
     var title: String? {
         didSet {
             if let title = title {
-                updateTitle(title)
+                self.updateTitle(title)
             }
         }
     }
+
+    var titleStyle = StringStyle(.font(.systemFont(ofSize: 16)), .tracking(.adobe(0.2)))
 
     var buttonOptions: ButtonOptions!
 
     override var isHighlighted: Bool {
         didSet {
-            alpha = isHighlighted ? 0.8 : 1
+            self.alpha = self.isHighlighted ? 0.8 : 1
         }
     }
 
-    init(_ title: String? = nil, image: UIImage? = nil, options: [ButtonOptions.Part]? = nil, closure: SelfClosure = nil) {
+    init(_ title: String? = nil, image: UIImage? = nil, options: [ButtonOptions.Part]? = nil) {
         super.init(frame: .zero)
 
         if let image = image {
             setImage(image, for: .normal)
-            imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 8)
-            titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: -8)
+            self.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 8)
+            self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: -8)
         }
 
         self.title = title
 
         if let options = options {
             buttonOptions = Button.DefaultButtonOptions.updateOptions(options)
-            applyOptions(buttonOptions)
-        } else {
-            applyOptions(Button.DefaultButtonOptions)
-            buttonOptions = Button.DefaultButtonOptions
+            self.applyOptions(buttonOptions)
         }
-
-        closure?(self)
+        else {
+            self.applyOptions(Button.DefaultButtonOptions)
+            self.buttonOptions = Button.DefaultButtonOptions
+        }
     }
 
     convenience init(_ title: String) {
         self.init(title, image: nil, options: nil)
     }
 
-    init(_ title: String? = nil, image: UIImage? = nil, style: ButtonOptions? = nil, closure: SelfClosure = nil) {
+    init(_ title: String? = nil, image: UIImage? = nil, style: ButtonOptions? = nil) {
         super.init(frame: .zero)
 
         if let image = image {
             setImage(image, for: .normal)
-            imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 8)
-            titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: -8)
+            self.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 8)
+            self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: -8)
         }
 
         self.title = title
 
         if let style = style {
             buttonOptions = style
-            applyOptions(style)
+            self.applyOptions(style)
         }
-
-        closure?(self)
     }
 
     func applyOptions(_ buttonOptions: ButtonOptions) {
         var attributedTitle: NSAttributedString?
-        let baseStyle = StringStyle(.font(.systemFont(ofSize: 16)), .tracking(.adobe(0.34)))
         if let titleStyle = buttonOptions.titleStyle {
+            self.titleStyle = titleStyle
             if let color = buttonOptions.color {
                 attributedTitle = title?.styled(with: titleStyle, .color(color))
-            } else {
+            }
+            else {
                 attributedTitle = title?.styled(with: titleStyle)
             }
-        } else if let color = buttonOptions.color {
-            attributedTitle = title?.styled(with: baseStyle, .color(color))
         }
-        setAttributedTitle(attributedTitle, for: .normal)
+        else if let color = buttonOptions.color {
+            attributedTitle = title?.styled(with: titleStyle, .color(color))
+        }
+        self.setAttributedTitle(attributedTitle, for: .normal)
 
         if let backgroundColor = buttonOptions.backgroundColor {
             self.backgroundColor = backgroundColor
         }
         if let borderColor = buttonOptions.borderColor {
-            layer.borderWidth = 1
-            layer.borderColor = borderColor.cgColor
+            self.layer.borderWidth = 1
+            self.layer.borderColor = borderColor.cgColor
         }
         if let padding = buttonOptions.padding {
-            contentEdgeInsets = padding
+            self.contentEdgeInsets = padding
         }
         if let height = buttonOptions.height {
-            snp.makeConstraints { make in
+            snp.makeConstraints { (make) in
                 make.height.equalTo(height)
             }
-            layer.cornerRadius = height / 2
+            self.layer.cornerRadius = height / 2
         }
     }
 
+
     private func updateTitle(_ title: String) {
-        let attributedTitle = title.styled(with: .font(.systemFont(ofSize: 16)), .tracking(.adobe(0.34)), .color(buttonOptions.color!))
-        setAttributedTitle(attributedTitle, for: .normal)
+        let attributedTitle = title.styled(with: titleStyle)
+        self.setAttributedTitle(attributedTitle, for: .normal)
     }
 
     required init?(coder aDecoder: NSCoder) {
