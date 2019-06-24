@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Spacer: UIView {
+public class Spacer: UIView {
     enum SpacerType {
         case fillHorizontal
         case fillVertical

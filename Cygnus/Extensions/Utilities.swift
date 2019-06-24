@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 // EDGE INSETS
-extension UIEdgeInsets {
+public extension UIEdgeInsets {
     // Returns a padding that offsets one or more sides
     func offsettedBy(top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) -> UIEdgeInsets {
         return UIEdgeInsets(top: self.top + top,
@@ -51,13 +51,13 @@ extension UIEdgeInsets {
 }
 
 // IMAGE
-extension UIImage {
+public extension UIImage {
     func getRatio() -> CGFloat {
         return self.size.height / self.size.width
     }
 }
 
-extension UIImageView {
+public extension UIImageView {
 
     func sizeToSuperview() {
 
@@ -85,7 +85,7 @@ extension UIImageView {
 }
 
 // STACK VIEW
-extension UIStackView {
+public extension UIStackView {
     func addArrangedSubviews(_ views: [UIView]) {
         for view in views {
             self.addArrangedSubview(view)

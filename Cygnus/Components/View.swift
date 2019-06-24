@@ -68,7 +68,7 @@ public struct ViewOptions {
     }
 }
 
-class View: UIView {
+public class View: UIView {
     let stack = UIStackView()
 
     init(_ views: [UIView], options: [ViewOptions.Part]? = nil) {

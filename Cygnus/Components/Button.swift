@@ -68,7 +68,7 @@ public struct ButtonOptions {
     }
 }
 
-class Button: UIButton {
+public class Button: UIButton {
 
     static let DefaultButtonOptions: ButtonOptions = ButtonOptions([
         .height(60),
@@ -89,7 +89,7 @@ class Button: UIButton {
 
     var buttonOptions: ButtonOptions!
 
-    override var isHighlighted: Bool {
+    override public var isHighlighted: Bool {
         didSet {
             self.alpha = self.isHighlighted ? 0.8 : 1
         }

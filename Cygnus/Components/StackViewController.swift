@@ -56,25 +56,25 @@ public struct StackViewControllerOptions {
     }
 }
 
-class StackViewController: UIViewController {
+public class StackViewController: UIViewController {
 
     /// Changes the status bar appearance
     var statusBarStyle: UIStatusBarStyle = .default
     var isStatusBarHidden: Bool = false
 
-    override var prefersStatusBarHidden: Bool {
+    override public var prefersStatusBarHidden: Bool {
         return isStatusBarHidden
     }
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    override public var preferredStatusBarStyle: UIStatusBarStyle {
         return statusBarStyle
     }
 
-    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+    override public var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .fade
     }
 
-    func updateStatusBar(style: UIStatusBarStyle, isHidden: Bool = false, isAnimated: Bool = true, delay: TimeInterval = 0) {
+    public func updateStatusBar(style: UIStatusBarStyle, isHidden: Bool = false, isAnimated: Bool = true, delay: TimeInterval = 0) {
         statusBarStyle = style
         isStatusBarHidden = isHidden
 
@@ -110,11 +110,11 @@ class StackViewController: UIViewController {
         self.setupDefaults()
     }
 
-    func addView(_ view: UIView) {
+    public func addView(_ view: UIView) {
         self.stack.addArrangedSubview(view)
     }
 
-    func addView(_ view: UIView, at index: Int) {
+    public func addView(_ view: UIView, at index: Int) {
         if index > self.stack.arrangedSubviews.count {
             print("Invalid index")
             return
@@ -122,7 +122,7 @@ class StackViewController: UIViewController {
         self.stack.insertArrangedSubview(view, at: index)
     }
 
-    func addViews(_ views: [UIView]) {
+    public func addViews(_ views: [UIView]) {
         self.stack.addArrangedSubviews(views)
     }
 
@@ -149,7 +149,7 @@ class StackViewController: UIViewController {
     /// - Parameters:
     ///   - views: Views to be added to stackView
     ///   - options: Options for our view controller, stackview and scrollview
-    func setupViews(_ views: [UIView], options: [StackViewControllerOptions.Part]) {
+    public func setupViews(_ views: [UIView], options: [StackViewControllerOptions.Part]) {
 
         // Add views
         for view in views {

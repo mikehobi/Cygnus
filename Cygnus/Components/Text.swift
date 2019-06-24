@@ -9,10 +9,10 @@
 import BonMot
 import UIKit
 
-class Text: UILabel {
+public class Text: UILabel {
     var stringStyle: StringStyle!
 
-    override var text: String? {
+    override public var text: String? {
         didSet {
             if let text = text {
                 updateText(text)

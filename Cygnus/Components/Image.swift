@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Image: UIImageView {
+public class Image: UIImageView {
     init(_ imageName: String) {
         super.init(frame: .zero)
         self.image = UIImage(named: imageName)
