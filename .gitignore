@@ -63,6 +63,7 @@ playground.xcworkspace
 # Avoid checking in source code and built binaries from Carthage dependencies.
 Carthage/Checkouts
 Carthage/Build
+old/
 
 # fastlane
 #

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Cygnuss.xcodeproj">
+      location = "container:/Users/mikehobizal/fun/Cygnus/Cygnus.xcodeproj">
    </FileRef>
 </Workspace>

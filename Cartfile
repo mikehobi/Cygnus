@@ -1,3 +1,2 @@
 github "SnapKit/SnapKit" ~> 5.0.0
-github "barrault01/Hero" "master"
 github "Raizlabs/BonMot" == 5.3
