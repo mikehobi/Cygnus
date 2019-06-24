@@ -6,13 +6,13 @@
 //  Copyright © 2019 Instrument Marketing. All rights reserved.
 //
 
-import UIKit
-
-class Col: View {
-    override func setupDefaults() {
-        stack.alignment = .fill
-        stack.distribution = .equalSpacing
-        stack.axis = .vertical
-        stack.spacing = 0
-    }
-}
+//import UIKit
+//
+//class Col: View {
+//    override func setupDefaults() {
+//        stack.alignment = .fill
+//        stack.distribution = .equalSpacing
+//        stack.axis = .vertical
+//        stack.spacing = 0
+//    }
+//}

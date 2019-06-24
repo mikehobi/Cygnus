@@ -11,8 +11,6 @@
 		7E2AEB4022C16B5000D52C45 /* UIImageView+sizeToSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEB3C22C16B5000D52C45 /* UIImageView+sizeToSuperview.swift */; };
 		7E2AEB4122C16B5000D52C45 /* UIStackView+addArrangedSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEB3D22C16B5000D52C45 /* UIStackView+addArrangedSubviews.swift */; };
 		7E2AEB4222C16B5000D52C45 /* UIEdgeInsets+x.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AEB3E22C16B5000D52C45 /* UIEdgeInsets+x.swift */; };
-		7E7597B822C1463400261A06 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7597B622C1463400261A06 /* SnapKit.framework */; };
-		7E7597B922C1463400261A06 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7597B722C1463400261A06 /* BonMot.framework */; };
 		7EC5A83522B9AE5100B4F27F /* Cygnus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC5A83322B9AE5100B4F27F /* Cygnus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EC5A84322B9AE6400B4F27F /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83B22B9AE6300B4F27F /* Text.swift */; };
 		7EC5A84422B9AE6400B4F27F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83C22B9AE6300B4F27F /* Image.swift */; };
@@ -29,8 +27,6 @@
 		7E2AEB3C22C16B5000D52C45 /* UIImageView+sizeToSuperview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+sizeToSuperview.swift"; path = "old/Cygnus/Extensions/UIImageView+sizeToSuperview.swift"; sourceTree = SOURCE_ROOT; };
 		7E2AEB3D22C16B5000D52C45 /* UIStackView+addArrangedSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStackView+addArrangedSubviews.swift"; path = "old/Cygnus/Extensions/UIStackView+addArrangedSubviews.swift"; sourceTree = SOURCE_ROOT; };
 		7E2AEB3E22C16B5000D52C45 /* UIEdgeInsets+x.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+x.swift"; path = "old/Cygnus/Extensions/UIEdgeInsets+x.swift"; sourceTree = SOURCE_ROOT; };
-		7E7597B622C1463400261A06 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
-		7E7597B722C1463400261A06 /* BonMot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BonMot.framework; path = Carthage/Build/iOS/BonMot.framework; sourceTree = "<group>"; };
 		7EC5A83022B9AE5100B4F27F /* Cygnus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cygnus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC5A83322B9AE5100B4F27F /* Cygnus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cygnus.h; sourceTree = "<group>"; };
 		7EC5A83422B9AE5100B4F27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7597B822C1463400261A06 /* SnapKit.framework in Frameworks */,
-				7E7597B922C1463400261A06 /* BonMot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +108,6 @@
 		7EC5A85522B9B05000B4F27F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E7597B722C1463400261A06 /* BonMot.framework */,
-				7E7597B622C1463400261A06 /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,18 +196,14 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/BonMot.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BonMot.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
