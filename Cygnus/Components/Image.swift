@@ -14,9 +14,9 @@ class Image: UIImageView {
         self.image = UIImage(named: imageName)
     }
 
-//    public func adjustSize() {
-//        self.sizeToSuperview()
-//    }
+    public func adjustSize() {
+        self.sizeToSuperview()
+    }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
