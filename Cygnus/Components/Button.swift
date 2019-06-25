@@ -95,7 +95,7 @@ public class Button: UIButton {
         }
     }
 
-    init(_ title: String? = nil, image: UIImage? = nil, options: [ButtonOptions.Part]? = nil) {
+    public init(_ title: String? = nil, image: UIImage? = nil, options: [ButtonOptions.Part]? = nil) {
         super.init(frame: .zero)
 
         if let image = image {
@@ -116,11 +116,11 @@ public class Button: UIButton {
         }
     }
 
-    convenience init(_ title: String) {
+    public convenience init(_ title: String) {
         self.init(title, image: nil, options: nil)
     }
 
-    init(_ title: String? = nil, image: UIImage? = nil, style: ButtonOptions? = nil) {
+    public init(_ title: String? = nil, image: UIImage? = nil, style: ButtonOptions? = nil) {
         super.init(frame: .zero)
 
         if let image = image {

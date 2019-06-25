@@ -56,21 +56,21 @@ public struct StackViewControllerOptions {
     }
 }
 
-public class StackViewController: UIViewController {
+open class StackViewController: UIViewController {
 
     /// Changes the status bar appearance
     var statusBarStyle: UIStatusBarStyle = .default
     var isStatusBarHidden: Bool = false
 
-    override public var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return isStatusBarHidden
     }
 
-    override public var preferredStatusBarStyle: UIStatusBarStyle {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         return statusBarStyle
     }
 
-    override public var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+    override open var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .fade
     }
 
@@ -97,7 +97,7 @@ public class StackViewController: UIViewController {
     let stack = UIStackView()
 
     // Init
-    init(_ views: [UIView], options: [StackViewControllerOptions.Part]) {
+    public init(_ views: [UIView], options: [StackViewControllerOptions.Part]) {
         super.init(nibName: nil, bundle: nil)
 
         self.setupDefaults()
@@ -105,9 +105,8 @@ public class StackViewController: UIViewController {
         setupViews(views, options: options)
     }
 
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        self.setupDefaults()
+    public convenience init() {
+        self.init([], options: [])
     }
 
     public func addView(_ view: UIView) {
@@ -206,7 +205,7 @@ public class StackViewController: UIViewController {
         }
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

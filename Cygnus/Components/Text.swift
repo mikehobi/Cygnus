@@ -20,7 +20,7 @@ public class Text: UILabel {
         }
     }
 
-    init(_ text: String, _ options: StringStyle.Part...) {
+    public init(_ text: String, _ options: StringStyle.Part...) {
         super.init(frame: .zero)
         numberOfLines = 0
         backgroundColor = .clear
@@ -29,7 +29,7 @@ public class Text: UILabel {
         attributedText = text.styled(with: stringStyle)
     }
 
-    init(_ text: String, style: StringStyle) {
+    public init(_ text: String, style: StringStyle) {
         super.init(frame: .zero)
         numberOfLines = 0
         backgroundColor = .clear
