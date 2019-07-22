@@ -3,4 +3,4 @@
 	url = https://github.com/SnapKit/SnapKit.git
 [submodule "Carthage/Checkouts/BonMot"]
 	path = Carthage/Checkouts/BonMot
-	url = https://github.com/Raizlabs/BonMot.git
+	url = https://github.com/Rightpoint/BonMot.git
