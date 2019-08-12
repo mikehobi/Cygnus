@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import BonMot
+import SnapKit
 
 public class Col: View {
     override func setupDefaults() {

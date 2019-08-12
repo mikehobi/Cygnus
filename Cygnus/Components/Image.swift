@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import BonMot
+import SnapKit
 
 public class Image: UIImageView {
     public init(_ imageName: String) {

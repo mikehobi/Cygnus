@@ -6,8 +6,9 @@
 //  Copyright © 2019 Instrument Marketing. All rights reserved.
 //
 
-import BonMot
 import UIKit
+import BonMot
+import SnapKit
 
 public class Text: UILabel {
     var stringStyle: StringStyle!
