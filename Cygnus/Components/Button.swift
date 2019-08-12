@@ -68,7 +68,7 @@ public struct ButtonOptions {
     }
 }
 
-class Button: UIButton {
+public class Button: UIButton {
 
     static let DefaultButtonOptions: ButtonOptions = ButtonOptions([
         .height(60),
@@ -89,13 +89,13 @@ class Button: UIButton {
 
     var buttonOptions: ButtonOptions!
 
-    override var isHighlighted: Bool {
+    override public var isHighlighted: Bool {
         didSet {
             self.alpha = self.isHighlighted ? 0.8 : 1
         }
     }
 
-    init(_ title: String? = nil, image: UIImage? = nil, options: [ButtonOptions.Part]? = nil) {
+    public init(_ title: String? = nil, image: UIImage? = nil, options: [ButtonOptions.Part]? = nil) {
         super.init(frame: .zero)
 
         if let image = image {
@@ -116,11 +116,11 @@ class Button: UIButton {
         }
     }
 
-    convenience init(_ title: String) {
+    public convenience init(_ title: String) {
         self.init(title, image: nil, options: nil)
     }
 
-    init(_ title: String? = nil, image: UIImage? = nil, style: ButtonOptions? = nil) {
+    public init(_ title: String? = nil, image: UIImage? = nil, style: ButtonOptions? = nil) {
         super.init(frame: .zero)
 
         if let image = image {

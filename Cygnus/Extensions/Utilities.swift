@@ -1,14 +1,16 @@
 //
-//  UIEdgeInsets+x.swift
-//  nike-mx
+//  Utilities.swift
+//  Cygnus
 //
-//  Created by Mike Hobizal on 5/10/19.
-//  Copyright © 2019 Instrument Marketing. All rights reserved.
+//  Created by Mike Hobizal on 6/24/19.
+//  Copyright © 2019 Mike Hobizal. All rights reserved.
 //
 
 import UIKit
+import SnapKit
 
-extension UIEdgeInsets {
+// EDGE INSETS
+public extension UIEdgeInsets {
     // Returns a padding that offsets one or more sides
     func offsettedBy(top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) -> UIEdgeInsets {
         return UIEdgeInsets(top: self.top + top,
@@ -46,42 +48,47 @@ extension UIEdgeInsets {
                             right: padding)
     }
 
-    static func all(_ top: CGFloat, _ left: CGFloat, _ bottom: CGFloat, _ right: CGFloat) -> UIEdgeInsets {
-        return UIEdgeInsets(top: top,
-                            left: left,
-                            bottom: right,
-                            right: bottom)
+}
+
+// IMAGE
+public extension UIImage {
+    func getRatio() -> CGFloat {
+        return self.size.height / self.size.width
+    }
+}
+
+public extension UIImageView {
+
+    func sizeToSuperview() {
+
+        guard let image = self.image else {
+            return
+        }
+
+        self.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+            make.height.equalTo(self.snp.width).multipliedBy(image.getRatio())
+        }
     }
 
-    // TOP
-    static func top(_ padding: CGFloat) -> UIEdgeInsets {
-        return UIEdgeInsets(top: padding,
-                            left: 0,
-                            bottom: 0,
-                            right: 0)
-    }
+    func sizeToSuperview(inset: CGFloat) {
 
-    // LEFT
-    static func left(_ padding: CGFloat) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0,
-                            left: padding,
-                            bottom: 0,
-                            right: 0)
-    }
+        guard let image = self.image else {
+            return
+        }
 
-    // RIGHT
-    static func right(_ padding: CGFloat) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0,
-                            left: 0,
-                            bottom: 0,
-                            right: padding)
+        self.snp.makeConstraints { make in
+            make.width.equalToSuperview().inset(inset)
+            make.height.equalTo(self.snp.width).multipliedBy(image.getRatio())
+        }
     }
+}
 
-    // BOTTOM
-    static func bottom(_ padding: CGFloat) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0,
-                            left: 0,
-                            bottom: padding,
-                            right: 0)
+// STACK VIEW
+public extension UIStackView {
+    func addArrangedSubviews(_ views: [UIView]) {
+        for view in views {
+            self.addArrangedSubview(view)
+        }
     }
 }

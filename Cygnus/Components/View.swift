@@ -68,10 +68,10 @@ public struct ViewOptions {
     }
 }
 
-class View: UIView {
+public class View: UIView {
     let stack = UIStackView()
 
-    init(_ views: [UIView], options: [ViewOptions.Part]? = nil) {
+     public init(_ views: [UIView], options: [ViewOptions.Part]? = nil) {
         super.init(frame: .zero)
 
         addSubview(stack)
@@ -89,7 +89,7 @@ class View: UIView {
         }
     }
 
-    convenience init(_ view: UIView, options: [ViewOptions.Part]? = nil) {
+    public convenience init(_ view: UIView, options: [ViewOptions.Part]? = nil) {
         self.init([view], options: options)
     }
 

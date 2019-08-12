@@ -9,10 +9,10 @@
 import BonMot
 import UIKit
 
-class Text: UILabel {
+public class Text: UILabel {
     var stringStyle: StringStyle!
 
-    override var text: String? {
+    override public var text: String? {
         didSet {
             if let text = text {
                 updateText(text)
@@ -20,7 +20,7 @@ class Text: UILabel {
         }
     }
 
-    init(_ text: String, _ options: StringStyle.Part...) {
+    public init(_ text: String, _ options: StringStyle.Part...) {
         super.init(frame: .zero)
         numberOfLines = 0
         backgroundColor = .clear
@@ -29,7 +29,7 @@ class Text: UILabel {
         attributedText = text.styled(with: stringStyle)
     }
 
-    init(_ text: String, style: StringStyle) {
+    public init(_ text: String, style: StringStyle) {
         super.init(frame: .zero)
         numberOfLines = 0
         backgroundColor = .clear

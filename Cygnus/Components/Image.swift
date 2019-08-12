@@ -8,8 +8,8 @@
 
 import UIKit
 
-class Image: UIImageView {
-    init(_ imageName: String) {
+public class Image: UIImageView {
+    public init(_ imageName: String) {
         super.init(frame: .zero)
         self.image = UIImage(named: imageName)
     }
@@ -18,7 +18,7 @@ class Image: UIImageView {
         self.sizeToSuperview()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

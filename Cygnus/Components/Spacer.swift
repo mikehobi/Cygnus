@@ -8,29 +8,30 @@
 
 import UIKit
 
-class Spacer: UIView {
-    enum SpacerType {
-        case fillHorizontal
-        case fillVertical
-
-        var priority: UILayoutPriority {
-            switch self {
-            case .fillVertical, .fillHorizontal:
-                return .defaultLow
-            }
-        }
-
-        var axis: NSLayoutConstraint.Axis {
-            switch self {
-            case .fillVertical:
-                return .vertical
-            case .fillHorizontal:
-                return .horizontal
-            }
+public enum SpacerType {
+    case fillHorizontal
+    case fillVertical
+    
+    var priority: UILayoutPriority {
+        switch self {
+        case .fillVertical, .fillHorizontal:
+            return .defaultLow
         }
     }
+    
+    var axis: NSLayoutConstraint.Axis {
+        switch self {
+        case .fillVertical:
+            return .vertical
+        case .fillHorizontal:
+            return .horizontal
+        }
+    }
+}
 
-    init(height: CGFloat? = nil, width: CGFloat? = nil) {
+public class Spacer: UIView {
+
+    public init(height: CGFloat? = nil, width: CGFloat? = nil) {
         super.init(frame: .zero)
 
         snp.makeConstraints { make in
@@ -44,7 +45,7 @@ class Spacer: UIView {
         }
     }
 
-    init(_ type: SpacerType) {
+    public init(_ type: SpacerType) {
         super.init(frame: .zero)
         setContentHuggingPriority(type.priority, for: type.axis)
     }
