@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7E1FFDB622C170A400D2401D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FFDB522C170A400D2401D /* Utilities.swift */; };
+		7E3FC7FB230216340051C13A /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1FFDB122C1702000D2401D /* BonMot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E3FC7FE230216350051C13A /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFB4655230203A4008C166C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E6F07CB22C194FA00BF75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */; };
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
@@ -22,9 +24,22 @@
 		7EC5A84822B9AE6400B4F27F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84022B9AE6300B4F27F /* Button.swift */; };
 		7EC5A84922B9AE6400B4F27F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
 		7EC5A84A22B9AE6400B4F27F /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84222B9AE6400B4F27F /* Row.swift */; };
-		7EFB4654230203A0008C166C /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1FFDB122C1702000D2401D /* BonMot.framework */; };
-		7EFB4656230203A4008C166C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFB4655230203A4008C166C /* SnapKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E3FC7FC230216340051C13A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E3FC7FB230216340051C13A /* BonMot.framework in Embed Frameworks */,
+				7E3FC7FE230216350051C13A /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7E1FFDB122C1702000D2401D /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFB4656230203A4008C166C /* SnapKit.framework in Frameworks */,
-				7EFB4654230203A0008C166C /* BonMot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +198,7 @@
 				7EC5A82C22B9AE5100B4F27F /* Sources */,
 				7EC5A82D22B9AE5100B4F27F /* Frameworks */,
 				7EC5A82E22B9AE5100B4F27F /* Resources */,
+				7E3FC7FC230216340051C13A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -461,7 +475,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "($SRCROOT)/**";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Cygnus/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -485,7 +499,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "($SRCROOT)/**";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Cygnus/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
