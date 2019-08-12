@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E1FFDB222C1702000D2401D /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1FFDB122C1702000D2401D /* BonMot.framework */; };
-		7E1FFDB422C1702000D2401D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1FFDB322C1702000D2401D /* SnapKit.framework */; };
 		7E1FFDB622C170A400D2401D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FFDB522C170A400D2401D /* Utilities.swift */; };
 		7E6F07CB22C194FA00BF75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */; };
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
@@ -24,6 +22,8 @@
 		7EC5A84822B9AE6400B4F27F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84022B9AE6300B4F27F /* Button.swift */; };
 		7EC5A84922B9AE6400B4F27F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
 		7EC5A84A22B9AE6400B4F27F /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84222B9AE6400B4F27F /* Row.swift */; };
+		7EFB4654230203A0008C166C /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1FFDB122C1702000D2401D /* BonMot.framework */; };
+		7EFB4656230203A4008C166C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFB4655230203A4008C166C /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +47,7 @@
 		7EC5A84022B9AE6300B4F27F /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7EC5A84122B9AE6400B4F27F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		7EC5A84222B9AE6400B4F27F /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		7EFB4655230203A4008C166C /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E1FFDB222C1702000D2401D /* BonMot.framework in Frameworks */,
-				7E1FFDB422C1702000D2401D /* SnapKit.framework in Frameworks */,
+				7EFB4656230203A4008C166C /* SnapKit.framework in Frameworks */,
+				7EFB4654230203A0008C166C /* BonMot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +139,7 @@
 		7EC5A85522B9B05000B4F27F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EFB4655230203A4008C166C /* SnapKit.framework */,
 				7E1FFDB122C1702000D2401D /* BonMot.framework */,
 				7E1FFDB322C1702000D2401D /* SnapKit.framework */,
 			);
