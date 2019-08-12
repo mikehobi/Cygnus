@@ -1,1 +1,7 @@
 
+[submodule "Carthage/Checkouts/BonMot"]
+	path = Carthage/Checkouts/BonMot
+	url = https://github.com/Rightpoint/BonMot.git
+[submodule "Carthage/Checkouts/SnapKit"]
+	path = Carthage/Checkouts/SnapKit
+	url = https://github.com/SnapKit/SnapKit.git

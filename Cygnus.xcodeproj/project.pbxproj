@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E06F3DC2302194F005E2F39 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E06F3DB2302194F005E2F39 /* BonMot.framework */; };
+		7E06F3DE2302194F005E2F39 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E06F3DD2302194F005E2F39 /* SnapKit.framework */; };
 		7E1FFDB622C170A400D2401D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FFDB522C170A400D2401D /* Utilities.swift */; };
-		7E3FC7FB230216340051C13A /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1FFDB122C1702000D2401D /* BonMot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7E3FC7FE230216350051C13A /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFB4655230203A4008C166C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E6F07CB22C194FA00BF75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */; };
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
@@ -33,8 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7E3FC7FB230216340051C13A /* BonMot.framework in Embed Frameworks */,
-				7E3FC7FE230216350051C13A /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,8 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7E1FFDB122C1702000D2401D /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E1FFDB322C1702000D2401D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E06F3DB2302194F005E2F39 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E06F3DD2302194F005E2F39 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1FFDB522C170A400D2401D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7E6F07C822C194FA00BF75E7 /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 		7EC5A84022B9AE6300B4F27F /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7EC5A84122B9AE6400B4F27F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		7EC5A84222B9AE6400B4F27F /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
-		7EFB4655230203A4008C166C /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E06F3DC2302194F005E2F39 /* BonMot.framework in Frameworks */,
+				7E06F3DE2302194F005E2F39 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +151,8 @@
 		7EC5A85522B9B05000B4F27F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EFB4655230203A4008C166C /* SnapKit.framework */,
-				7E1FFDB122C1702000D2401D /* BonMot.framework */,
-				7E1FFDB322C1702000D2401D /* SnapKit.framework */,
+				7E06F3DB2302194F005E2F39 /* BonMot.framework */,
+				7E06F3DD2302194F005E2F39 /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
