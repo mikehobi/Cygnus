@@ -11,14 +11,14 @@ import UIKit
 public enum SpacerType {
     case fillHorizontal
     case fillVertical
-
+    
     var priority: UILayoutPriority {
         switch self {
         case .fillVertical, .fillHorizontal:
             return .defaultLow
         }
     }
-
+    
     var axis: NSLayoutConstraint.Axis {
         switch self {
         case .fillVertical:

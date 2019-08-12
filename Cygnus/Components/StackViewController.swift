@@ -56,21 +56,21 @@ public struct StackViewControllerOptions {
     }
 }
 
-public class StackViewController: UIViewController {
+open class StackViewController: UIViewController {
 
     /// Changes the status bar appearance
     var statusBarStyle: UIStatusBarStyle = .default
     var isStatusBarHidden: Bool = false
 
-    override public var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return isStatusBarHidden
     }
 
-    override public var preferredStatusBarStyle: UIStatusBarStyle {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         return statusBarStyle
     }
 
-    override public var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+    override open var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .fade
     }
 
