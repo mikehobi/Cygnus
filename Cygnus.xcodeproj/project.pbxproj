@@ -7,17 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E06F3E023022B9A005E2F39 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E06F3DF23022B9A005E2F39 /* BonMot.framework */; };
-		7E06F3E223022B9A005E2F39 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E06F3E123022B9A005E2F39 /* SnapKit.framework */; };
-		7E06F3E32302304E005E2F39 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FFDB522C170A400D2401D /* Utilities.swift */; };
-		7E06F3E4230230A7005E2F39 /* Col.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83E22B9AE6300B4F27F /* Col.swift */; };
-		7E06F3E5230230A7005E2F39 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83C22B9AE6300B4F27F /* Image.swift */; };
-		7E06F3E6230230A7005E2F39 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84222B9AE6400B4F27F /* Row.swift */; };
-		7E06F3E7230230A7005E2F39 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83F22B9AE6300B4F27F /* Spacer.swift */; };
-		7E06F3E8230230A7005E2F39 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83D22B9AE6300B4F27F /* StackViewController.swift */; };
-		7E06F3E9230230A7005E2F39 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83B22B9AE6300B4F27F /* Text.swift */; };
-		7E06F3EA230230A7005E2F39 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
-		7E06F3EB230230AA005E2F39 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84022B9AE6300B4F27F /* Button.swift */; };
+		7E30951423023601008756F9 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E30951323023601008756F9 /* SnapKit.framework */; };
+		7E309516230236A9008756F9 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E309515230236A9008756F9 /* BonMot.framework */; };
+		7E309521230237E1008756F9 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E309520230237E1008756F9 /* Test.swift */; };
 		7E6F07CB22C194FA00BF75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */; };
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
@@ -40,9 +32,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7E06F3DF23022B9A005E2F39 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E06F3E123022B9A005E2F39 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1FFDB522C170A400D2401D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7E30951323023601008756F9 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E309515230236A9008756F9 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E309520230237E1008756F9 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		7E6F07C822C194FA00BF75E7 /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6F07CC22C194FA00BF75E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E06F3E023022B9A005E2F39 /* BonMot.framework in Frameworks */,
-				7E06F3E223022B9A005E2F39 /* SnapKit.framework in Frameworks */,
+				7E309516230236A9008756F9 /* BonMot.framework in Frameworks */,
+				7E30951423023601008756F9 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7EC5A84022B9AE6300B4F27F /* Button.swift */,
+				7E309520230237E1008756F9 /* Test.swift */,
 				7EC5A83E22B9AE6300B4F27F /* Col.swift */,
 				7EC5A83C22B9AE6300B4F27F /* Image.swift */,
 				7EC5A84222B9AE6400B4F27F /* Row.swift */,
@@ -151,8 +145,8 @@
 		7EC5A85522B9B05000B4F27F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E06F3DF23022B9A005E2F39 /* BonMot.framework */,
-				7E06F3E123022B9A005E2F39 /* SnapKit.framework */,
+				7E309515230236A9008756F9 /* BonMot.framework */,
+				7E30951323023601008756F9 /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,15 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E06F3EA230230A7005E2F39 /* View.swift in Sources */,
-				7E06F3E6230230A7005E2F39 /* Row.swift in Sources */,
-				7E06F3E7230230A7005E2F39 /* Spacer.swift in Sources */,
-				7E06F3E4230230A7005E2F39 /* Col.swift in Sources */,
-				7E06F3E9230230A7005E2F39 /* Text.swift in Sources */,
-				7E06F3E8230230A7005E2F39 /* StackViewController.swift in Sources */,
-				7E06F3E5230230A7005E2F39 /* Image.swift in Sources */,
-				7E06F3EB230230AA005E2F39 /* Button.swift in Sources */,
-				7E06F3E32302304E005E2F39 /* Utilities.swift in Sources */,
+				7E309521230237E1008756F9 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +465,11 @@
 				INFOPLIST_FILE = Cygnus/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MikeHobizal.Cygnus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -503,6 +494,11 @@
 				INFOPLIST_FILE = Cygnus/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MikeHobizal.Cygnus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
