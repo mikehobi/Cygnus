@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import BonMot
 import SnapKit
 
 public class Col: View {

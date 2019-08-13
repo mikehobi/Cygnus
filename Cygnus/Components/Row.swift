@@ -6,8 +6,7 @@
 //  Copyright © 2019 Instrument Marketing. All rights reserved.
 //
 
-import UIKit
-import BonMot
+import UIKit 
 import SnapKit
 
 public class Row: View {

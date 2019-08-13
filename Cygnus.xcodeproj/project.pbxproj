@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7E30951423023601008756F9 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E30951323023601008756F9 /* SnapKit.framework */; };
-		7E309516230236A9008756F9 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E309515230236A9008756F9 /* BonMot.framework */; };
-		7E309521230237E1008756F9 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E309520230237E1008756F9 /* Test.swift */; };
 		7E6F07CB22C194FA00BF75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */; };
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
 		7E6F07D522C194FC00BF75E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D322C194FC00BF75E7 /* LaunchScreen.storyboard */; };
 		7E6F07DA22C198AC00BF75E7 /* Cygnus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC5A83022B9AE5100B4F27F /* Cygnus.framework */; };
+		7EAF8E50230325EE006A518F /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E309515230236A9008756F9 /* BonMot.framework */; };
+		7EAF8E5923032AAA006A518F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84022B9AE6300B4F27F /* Button.swift */; };
+		7EAF8E5A23032AAA006A518F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E309520230237E1008756F9 /* Test.swift */; };
+		7EAF8E5B23032AAA006A518F /* Col.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83E22B9AE6300B4F27F /* Col.swift */; };
+		7EAF8E5C23032AAA006A518F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83C22B9AE6300B4F27F /* Image.swift */; };
+		7EAF8E5D23032AAA006A518F /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84222B9AE6400B4F27F /* Row.swift */; };
+		7EAF8E5E23032AAA006A518F /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83F22B9AE6300B4F27F /* Spacer.swift */; };
+		7EAF8E5F23032AAA006A518F /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83D22B9AE6300B4F27F /* StackViewController.swift */; };
+		7EAF8E6023032AAA006A518F /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83B22B9AE6300B4F27F /* Text.swift */; };
+		7EAF8E6123032AAA006A518F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
+		7EAF8E6223032AAE006A518F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FFDB522C170A400D2401D /* Utilities.swift */; };
 		7EC5A83522B9AE5100B4F27F /* Cygnus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC5A83322B9AE5100B4F27F /* Cygnus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -68,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E309516230236A9008756F9 /* BonMot.framework in Frameworks */,
+				7EAF8E50230325EE006A518F /* BonMot.framework in Frameworks */,
 				7E30951423023601008756F9 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E309521230237E1008756F9 /* Test.swift in Sources */,
+				7EAF8E5923032AAA006A518F /* Button.swift in Sources */,
+				7EAF8E5E23032AAA006A518F /* Spacer.swift in Sources */,
+				7EAF8E6023032AAA006A518F /* Text.swift in Sources */,
+				7EAF8E5C23032AAA006A518F /* Image.swift in Sources */,
+				7EAF8E5F23032AAA006A518F /* StackViewController.swift in Sources */,
+				7EAF8E6123032AAA006A518F /* View.swift in Sources */,
+				7EAF8E5B23032AAA006A518F /* Col.swift in Sources */,
+				7EAF8E5D23032AAA006A518F /* Row.swift in Sources */,
+				7EAF8E6223032AAE006A518F /* Utilities.swift in Sources */,
+				7EAF8E5A23032AAA006A518F /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +492,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -502,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MikeHobizal.Cygnus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
