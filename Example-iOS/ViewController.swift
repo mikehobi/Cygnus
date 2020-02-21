@@ -12,11 +12,9 @@ import Cygnus
 class ViewController: StackViewController {
 
     // Buttons
-    let oneButton =
-        Button("Button One", options: [.backgroundColor(.gray), .color(.black), .padding(.horizontal(16))])
+    let oneButton = Button("Button One", style: .dark)
 
-    let twoButton =
-        Button("Button Two", options: [.backgroundColor(.black), .color(.white), .padding(.horizontal(16))])
+    let twoButton = Button("Button Two", style: .light)
 
     override func viewDidLoad() {
         super.viewDidLoad()

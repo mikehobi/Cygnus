@@ -1,13 +1,9 @@
 //
-//  View.swift
-//  nike-mx
-//
-//  Created by Mike Hobizal on 5/10/19.
-//  Copyright © 2019 Instrument Marketing. All rights reserved.
+// Row.swift
+// 2020 Instrument Marketing
 //
 
-import UIKit 
-import SnapKit
+import UIKit
 
 public class Row: View {
     override func setupDefaults() {
