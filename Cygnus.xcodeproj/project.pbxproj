@@ -19,7 +19,6 @@
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
 		7E6F07D522C194FC00BF75E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D322C194FC00BF75E7 /* LaunchScreen.storyboard */; };
-		7EAF8E5A23032AAA006A518F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E309520230237E1008756F9 /* Test.swift */; };
 		7EAF8E5B23032AAA006A518F /* Col.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83E22B9AE6300B4F27F /* Col.swift */; };
 		7EAF8E5C23032AAA006A518F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83C22B9AE6300B4F27F /* Image.swift */; };
 		7EAF8E5D23032AAA006A518F /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84222B9AE6400B4F27F /* Row.swift */; };
@@ -68,7 +67,6 @@
 
 /* Begin PBXFileReference section */
 		7E1FFDB522C170A400D2401D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		7E309520230237E1008756F9 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		7E4A9F2A240063D9005F53D3 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4A9F2B240063D9005F53D3 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6F07C822C194FA00BF75E7 /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				7EC5A84022B9AE6300B4F27F /* Button.swift */,
-				7E309520230237E1008756F9 /* Test.swift */,
 				7EC5A83E22B9AE6300B4F27F /* Col.swift */,
 				7EC5A83C22B9AE6300B4F27F /* Image.swift */,
 				7EC5A84222B9AE6400B4F27F /* Row.swift */,
@@ -318,7 +315,6 @@
 				7E4A9F2724006173005F53D3 /* Text.swift in Sources */,
 				7EAF8E6223032AAE006A518F /* Utilities.swift in Sources */,
 				7E4A9F2624006173005F53D3 /* Button.swift in Sources */,
-				7EAF8E5A23032AAA006A518F /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

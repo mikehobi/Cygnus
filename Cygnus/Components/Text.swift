@@ -1,19 +1,13 @@
 //
-//  Text.swift
-//  nike-mx
-//
-//  Created by Mike Hobizal on 5/10/19.
-//  Copyright © 2019 Instrument Marketing. All rights reserved.
+// Text.swift
+// 2020 Instrument Marketing
 //
 
-import UIKit
 import BonMot
-import SnapKit
+import UIKit
 
 public class Text: UILabel {
-    var stringStyle: StringStyle!
-
-    override public var text: String? {
+    var stringStyle: StringStyle {
         didSet {
             if let text = text {
                 updateText(text)
@@ -21,21 +15,32 @@ public class Text: UILabel {
         }
     }
 
-    public init(_ text: String, _ options: StringStyle.Part...) {
-        super.init(frame: .zero)
-        numberOfLines = 0
-        backgroundColor = .clear
+    override var text: String? {
+        didSet {
+            if let text = text {
+                updateText(text)
+            }
+        }
+    }
 
+    init(_ text: String, _ options: StringStyle.Part...) {
         stringStyle = StringStyle(options)
+        super.init(frame: .zero)
+        setup()
         attributedText = text.styled(with: stringStyle)
     }
 
-    public init(_ text: String, style: StringStyle) {
+    init(_ text: String, style: StringStyle) {
+        stringStyle = style
         super.init(frame: .zero)
+        setup()
+        attributedText = text.styled(with: style)
+    }
+
+    private func setup() {
         numberOfLines = 0
         backgroundColor = .clear
-
-        attributedText = text.styled(with: style)
+        setContentHuggingPriority(.defaultHigh, for: .vertical)
     }
 
     required init?(coder _: NSCoder) {
@@ -44,5 +49,25 @@ public class Text: UILabel {
 
     private func updateText(_ text: String) {
         attributedText = text.styled(with: stringStyle)
+    }
+
+    var labelSnapshot: UIImageView?
+    func updateStyle(_ options: StringStyle.Part...) {
+        prepareStyleUpdate()
+        stringStyle = stringStyle.byAdding(options)
+        labelSnapshot?.alpha = 0
+    }
+
+    func prepareStyleUpdate() {
+        labelSnapshot?.removeFromSuperview()
+        labelSnapshot = snapshot()
+        if let labelSnapshot = labelSnapshot {
+            labelSnapshot.alpha = 1
+            insertSubview(labelSnapshot, at: 0)
+        }
+    }
+
+    func cleanUp() {
+        labelSnapshot?.removeFromSuperview()
     }
 }
