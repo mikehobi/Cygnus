@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,10 +11,10 @@
 		7E4A9F22240060CE005F53D3 /* Cygnus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC5A83022B9AE5100B4F27F /* Cygnus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E4A9F2624006173005F53D3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84022B9AE6300B4F27F /* Button.swift */; };
 		7E4A9F2724006173005F53D3 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83B22B9AE6300B4F27F /* Text.swift */; };
-		7E4A9F2C240063D9005F53D3 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; };
-		7E4A9F2D240063D9005F53D3 /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7E4A9F2E240063D9005F53D3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; };
-		7E4A9F2F240063D9005F53D3 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E4A9F2C240063D9005F53D3 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; platformFilter = ios; };
+		7E4A9F2D240063D9005F53D3 /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E4A9F2E240063D9005F53D3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; platformFilter = ios; };
+		7E4A9F2F240063D9005F53D3 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E6F07CB22C194FA00BF75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */; };
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
@@ -359,6 +359,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MikeHobizal.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,6 +380,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MikeHobizal.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

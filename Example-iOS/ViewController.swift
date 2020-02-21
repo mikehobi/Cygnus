@@ -12,24 +12,20 @@ import Cygnus
 class ViewController: StackViewController {
 
     // Buttons
-//    let oneButton = Button("Button One", style: .dark)
-    let oneButton = UIButton()
+    let oneButton = Button("Button One", style: .dark)
 
-//    let twoButton = Button("Button Two", style: .light)
-    let twoButton = UIButton()
+    let twoButton = Button("Button Two", style: .light)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Title
-//        let title = Text("Cygnus", .font(.systemFont(ofSize: 24)))
-        let title = UILabel()
+        let title = Text("Cygnus", .font(.systemFont(ofSize: 24)))
         let titlePadding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         let titleView = View(title, options: [.padding(titlePadding)])
 
         // Subtitle
-//        let subtitle = Text("Experimental Views", .font(.systemFont(ofSize: 24)), .color(.gray))
-        let subtitle = UILabel()
+        let subtitle = Text("Experimental Views", .font(.systemFont(ofSize: 24)), .color(.gray))
         let subtitlePadding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         let subtitleView = View(subtitle, options: [.padding(subtitlePadding)])
 
