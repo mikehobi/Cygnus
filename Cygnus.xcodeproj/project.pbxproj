@@ -7,33 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E30951423023601008756F9 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E30951323023601008756F9 /* SnapKit.framework */; };
+		7E4A9F21240060CE005F53D3 /* Cygnus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC5A83022B9AE5100B4F27F /* Cygnus.framework */; };
+		7E4A9F22240060CE005F53D3 /* Cygnus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC5A83022B9AE5100B4F27F /* Cygnus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E4A9F2624006173005F53D3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84022B9AE6300B4F27F /* Button.swift */; };
+		7E4A9F2724006173005F53D3 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83B22B9AE6300B4F27F /* Text.swift */; };
+		7E4A9F2C240063D9005F53D3 /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; };
+		7E4A9F2D240063D9005F53D3 /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E4A9F2E240063D9005F53D3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; };
+		7E4A9F2F240063D9005F53D3 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E6F07CB22C194FA00BF75E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */; };
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
 		7E6F07D522C194FC00BF75E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D322C194FC00BF75E7 /* LaunchScreen.storyboard */; };
-		7E6F07DA22C198AC00BF75E7 /* Cygnus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC5A83022B9AE5100B4F27F /* Cygnus.framework */; };
-		7EAF8E50230325EE006A518F /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E309515230236A9008756F9 /* BonMot.framework */; };
-		7EAF8E5923032AAA006A518F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84022B9AE6300B4F27F /* Button.swift */; };
 		7EAF8E5A23032AAA006A518F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E309520230237E1008756F9 /* Test.swift */; };
 		7EAF8E5B23032AAA006A518F /* Col.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83E22B9AE6300B4F27F /* Col.swift */; };
 		7EAF8E5C23032AAA006A518F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83C22B9AE6300B4F27F /* Image.swift */; };
 		7EAF8E5D23032AAA006A518F /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84222B9AE6400B4F27F /* Row.swift */; };
 		7EAF8E5E23032AAA006A518F /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83F22B9AE6300B4F27F /* Spacer.swift */; };
 		7EAF8E5F23032AAA006A518F /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83D22B9AE6300B4F27F /* StackViewController.swift */; };
-		7EAF8E6023032AAA006A518F /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83B22B9AE6300B4F27F /* Text.swift */; };
 		7EAF8E6123032AAA006A518F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
 		7EAF8E6223032AAE006A518F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FFDB522C170A400D2401D /* Utilities.swift */; };
 		7EC5A83522B9AE5100B4F27F /* Cygnus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC5A83322B9AE5100B4F27F /* Cygnus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7E4A9F23240060CE005F53D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EC5A82722B9AE5100B4F27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EC5A82F22B9AE5100B4F27F;
+			remoteInfo = Cygnus;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		7E3FC7FC230216340051C13A /* Embed Frameworks */ = {
+		7E4A9F25240060CE005F53D3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7E4A9F22240060CE005F53D3 /* Cygnus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDE233824005EC5002AA266 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E4A9F2D240063D9005F53D3 /* BonMot.framework in Embed Frameworks */,
+				7E4A9F2F240063D9005F53D3 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,9 +68,9 @@
 
 /* Begin PBXFileReference section */
 		7E1FFDB522C170A400D2401D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		7E30951323023601008756F9 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E309515230236A9008756F9 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E309520230237E1008756F9 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		7E4A9F2A240063D9005F53D3 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4A9F2B240063D9005F53D3 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6F07C822C194FA00BF75E7 /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6F07CA22C194FA00BF75E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6F07CC22C194FA00BF75E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E6F07DA22C198AC00BF75E7 /* Cygnus.framework in Frameworks */,
+				7E4A9F21240060CE005F53D3 /* Cygnus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EAF8E50230325EE006A518F /* BonMot.framework in Frameworks */,
-				7E30951423023601008756F9 /* SnapKit.framework in Frameworks */,
+				7E4A9F2C240063D9005F53D3 /* BonMot.framework in Frameworks */,
+				7E4A9F2E240063D9005F53D3 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +180,8 @@
 		7EC5A85522B9B05000B4F27F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E309515230236A9008756F9 /* BonMot.framework */,
-				7E30951323023601008756F9 /* SnapKit.framework */,
+				7E4A9F2A240063D9005F53D3 /* BonMot.framework */,
+				7E4A9F2B240063D9005F53D3 /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,10 +207,12 @@
 				7E6F07C422C194FA00BF75E7 /* Sources */,
 				7E6F07C522C194FA00BF75E7 /* Frameworks */,
 				7E6F07C622C194FA00BF75E7 /* Resources */,
+				7E4A9F25240060CE005F53D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E4A9F24240060CE005F53D3 /* PBXTargetDependency */,
 			);
 			name = "Example-iOS";
 			productName = "Example-iOS";
@@ -199,7 +227,7 @@
 				7EC5A82C22B9AE5100B4F27F /* Sources */,
 				7EC5A82D22B9AE5100B4F27F /* Frameworks */,
 				7EC5A82E22B9AE5100B4F27F /* Resources */,
-				7E3FC7FC230216340051C13A /* Embed Frameworks */,
+				7EDE233824005EC5002AA266 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,20 +309,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EAF8E5923032AAA006A518F /* Button.swift in Sources */,
 				7EAF8E5E23032AAA006A518F /* Spacer.swift in Sources */,
-				7EAF8E6023032AAA006A518F /* Text.swift in Sources */,
 				7EAF8E5C23032AAA006A518F /* Image.swift in Sources */,
 				7EAF8E5F23032AAA006A518F /* StackViewController.swift in Sources */,
 				7EAF8E6123032AAA006A518F /* View.swift in Sources */,
 				7EAF8E5B23032AAA006A518F /* Col.swift in Sources */,
 				7EAF8E5D23032AAA006A518F /* Row.swift in Sources */,
+				7E4A9F2724006173005F53D3 /* Text.swift in Sources */,
 				7EAF8E6223032AAE006A518F /* Utilities.swift in Sources */,
+				7E4A9F2624006173005F53D3 /* Button.swift in Sources */,
 				7EAF8E5A23032AAA006A518F /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E4A9F24240060CE005F53D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EC5A82F22B9AE5100B4F27F /* Cygnus */;
+			targetProxy = 7E4A9F23240060CE005F53D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7E6F07D322C194FC00BF75E7 /* LaunchScreen.storyboard */ = {
@@ -311,6 +347,7 @@
 		7E6F07D822C194FC00BF75E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLKF8BP497;
@@ -330,6 +367,7 @@
 		7E6F07D922C194FC00BF75E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLKF8BP497;
