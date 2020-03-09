@@ -15,7 +15,7 @@ public class Text: UILabel {
         }
     }
 
-    override var text: String? {
+    override public var text: String? {
         didSet {
             if let text = text {
                 updateText(text)
@@ -23,14 +23,14 @@ public class Text: UILabel {
         }
     }
 
-    init(_ text: String, _ options: StringStyle.Part...) {
+    public init(_ text: String, _ options: StringStyle.Part...) {
         stringStyle = StringStyle(options)
         super.init(frame: .zero)
         setup()
         attributedText = text.styled(with: stringStyle)
     }
 
-    init(_ text: String, style: StringStyle) {
+    public init(_ text: String, style: StringStyle) {
         stringStyle = style
         super.init(frame: .zero)
         setup()
