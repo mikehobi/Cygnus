@@ -92,3 +92,14 @@ public extension UIStackView {
         }
     }
 }
+
+public extension UIView {
+    func snapshot(bounds: CGRect? = nil) -> UIImageView {
+        let renderBounds = bounds ?? self.bounds
+        let renderer = UIGraphicsImageRenderer(bounds: renderBounds)
+        let image = renderer.image { rendererContext in
+            self.layer.render(in: rendererContext.cgContext)
+        }
+        return UIImageView(image: image)
+    }
+}

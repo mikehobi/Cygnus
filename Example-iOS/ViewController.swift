@@ -30,7 +30,7 @@ class ViewController: StackViewController {
         let subtitleView = View(subtitle, options: [.padding(subtitlePadding)])
 
         // Button Row
-        let buttonRow = Row([oneButton, Spacer(.fillHorizontal), twoButton],
+        let buttonRow = Row([oneButton, twoButton],
                             options: [
                                 .distribution(.fillEqually),
                                 .spacing(0),

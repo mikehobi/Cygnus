@@ -19,6 +19,10 @@
 		7E6F07CD22C194FA00BF75E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F07CC22C194FA00BF75E7 /* ViewController.swift */; };
 		7E6F07D222C194FC00BF75E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D122C194FC00BF75E7 /* Assets.xcassets */; };
 		7E6F07D522C194FC00BF75E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6F07D322C194FC00BF75E7 /* LaunchScreen.storyboard */; };
+		7E82C92F2416FF29001337AA /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; };
+		7E82C9302416FF29001337AA /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2A240063D9005F53D3 /* BonMot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E82C9312416FF29001337AA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; };
+		7E82C9322416FF29001337AA /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A9F2B240063D9005F53D3 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EAF8E5B23032AAA006A518F /* Col.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83E22B9AE6300B4F27F /* Col.swift */; };
 		7EAF8E5C23032AAA006A518F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83C22B9AE6300B4F27F /* Image.swift */; };
 		7EAF8E5D23032AAA006A518F /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84222B9AE6400B4F27F /* Row.swift */; };
@@ -46,7 +50,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7E82C9322416FF29001337AA /* SnapKit.framework in Embed Frameworks */,
 				7E4A9F22240060CE005F53D3 /* Cygnus.framework in Embed Frameworks */,
+				7E82C9302416FF29001337AA /* BonMot.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E82C9312416FF29001337AA /* SnapKit.framework in Frameworks */,
 				7E4A9F21240060CE005F53D3 /* Cygnus.framework in Frameworks */,
+				7E82C92F2416FF29001337AA /* BonMot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
