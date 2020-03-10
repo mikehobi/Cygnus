@@ -5,7 +5,7 @@
 
 import UIKit
 import SnapKit
-//import BonMot
+import BonMot
 
 public class Buble: NSObject {
     public func methodMan() {
@@ -16,6 +16,10 @@ public class Buble: NSObject {
         view.snp.makeConstraints {
             $0.width.equalToSuperview()
         }
+    }
+
+    public func strang() -> StringStyle {
+        return StringStyle(.color(.blue))
     }
 }
 
