@@ -21,12 +21,12 @@ class ViewController: StackViewController {
 
         // Title
         let title = Text("Cygnus", .font(.systemFont(ofSize: 24)))
-        let titlePadding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        let titlePadding = UIEdgeInsets(.horizontal(20))
         let titleView = View(title, options: [.padding(titlePadding)])
 
         // Subtitle
         let subtitle = Text("Experimental Views", .font(.systemFont(ofSize: 24)), .color(.gray))
-        let subtitlePadding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        let subtitlePadding = UIEdgeInsets(.horizontal(20))
         let subtitleView = View(subtitle, options: [.padding(subtitlePadding)])
 
         // Button Row

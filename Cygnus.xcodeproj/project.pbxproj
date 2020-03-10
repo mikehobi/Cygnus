@@ -25,12 +25,16 @@
 		7EAF8E5E23032AAA006A518F /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83F22B9AE6300B4F27F /* Spacer.swift */; };
 		7EAF8E5F23032AAA006A518F /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A83D22B9AE6300B4F27F /* StackViewController.swift */; };
 		7EAF8E6123032AAA006A518F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
-		7EAF8E6223032AAE006A518F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FFDB522C170A400D2401D /* Utilities.swift */; };
 		7EC5A83522B9AE5100B4F27F /* Cygnus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC5A83322B9AE5100B4F27F /* Cygnus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EFFFD27241853D900DFED8F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFFFD25241853D900DFED8F /* SnapKit.framework */; };
 		7EFFFD28241853D900DFED8F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFFFD25241853D900DFED8F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EFFFD29241853D900DFED8F /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFFFD26241853D900DFED8F /* BonMot.framework */; };
 		7EFFFD2A241853D900DFED8F /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFFFD26241853D900DFED8F /* BonMot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EFFFD33241857C000DFED8F /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFFFD32241857C000DFED8F /* UIStackView+.swift */; };
+		7EFFFD35241857CF00DFED8F /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFFFD34241857CF00DFED8F /* UIView+.swift */; };
+		7EFFFD37241857E900DFED8F /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFFFD36241857E900DFED8F /* UIImage+.swift */; };
+		7EFFFD39241857F900DFED8F /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFFFD38241857F800DFED8F /* UIImageView+.swift */; };
+		7EFFFD3B2418586900DFED8F /* UIEdgeInsets+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFFFD3A2418586800DFED8F /* UIEdgeInsets+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +76,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7E1FFDB522C170A400D2401D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7E4A9F2A240063D9005F53D3 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4A9F2B240063D9005F53D3 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6F07C822C194FA00BF75E7 /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +97,11 @@
 		7EC5A84222B9AE6400B4F27F /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		7EFFFD25241853D900DFED8F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		7EFFFD26241853D900DFED8F /* BonMot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BonMot.framework; path = Carthage/Build/iOS/BonMot.framework; sourceTree = "<group>"; };
+		7EFFFD32241857C000DFED8F /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		7EFFFD34241857CF00DFED8F /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		7EFFFD36241857E900DFED8F /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		7EFFFD38241857F800DFED8F /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		7EFFFD3A2418586800DFED8F /* UIEdgeInsets+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +187,11 @@
 		7EC5A84C22B9AE7100B4F27F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7E1FFDB522C170A400D2401D /* Utilities.swift */,
+				7EFFFD32241857C000DFED8F /* UIStackView+.swift */,
+				7EFFFD36241857E900DFED8F /* UIImage+.swift */,
+				7EFFFD38241857F800DFED8F /* UIImageView+.swift */,
+				7EFFFD34241857CF00DFED8F /* UIView+.swift */,
+				7EFFFD3A2418586800DFED8F /* UIEdgeInsets+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -318,14 +330,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFFFD37241857E900DFED8F /* UIImage+.swift in Sources */,
 				7EAF8E5E23032AAA006A518F /* Spacer.swift in Sources */,
 				7EAF8E5C23032AAA006A518F /* Image.swift in Sources */,
 				7EAF8E5F23032AAA006A518F /* StackViewController.swift in Sources */,
 				7EAF8E6123032AAA006A518F /* View.swift in Sources */,
 				7EAF8E5B23032AAA006A518F /* Col.swift in Sources */,
+				7EFFFD33241857C000DFED8F /* UIStackView+.swift in Sources */,
 				7EAF8E5D23032AAA006A518F /* Row.swift in Sources */,
 				7E4A9F2724006173005F53D3 /* Text.swift in Sources */,
-				7EAF8E6223032AAE006A518F /* Utilities.swift in Sources */,
+				7EFFFD39241857F900DFED8F /* UIImageView+.swift in Sources */,
+				7EFFFD3B2418586900DFED8F /* UIEdgeInsets+.swift in Sources */,
+				7EFFFD35241857CF00DFED8F /* UIView+.swift in Sources */,
 				7E4A9F2624006173005F53D3 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
