@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E11094C2418307E002B69BC /* BonMot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E11094A2418307E002B69BC /* BonMot.framework */; };
-		7E11094D2418307E002B69BC /* BonMot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E11094A2418307E002B69BC /* BonMot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7E11094E2418307E002B69BC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E11094B2418307E002B69BC /* SnapKit.framework */; };
-		7E11094F2418307E002B69BC /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E11094B2418307E002B69BC /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EAF8E6123032AAA006A518F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
 		7EC5A83522B9AE5100B4F27F /* Cygnus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC5A83322B9AE5100B4F27F /* Cygnus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -22,8 +18,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7E11094D2418307E002B69BC /* BonMot.framework in Embed Frameworks */,
-				7E11094F2418307E002B69BC /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,8 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E11094C2418307E002B69BC /* BonMot.framework in Frameworks */,
-				7E11094E2418307E002B69BC /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
