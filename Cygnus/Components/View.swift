@@ -4,12 +4,18 @@
 //
 
 import UIKit
-//import SnapKit
+import SnapKit
 //import BonMot
 
 public class Buble: NSObject {
     public func methodMan() {
         print("method, man")
+    }
+
+    public func thang(_ view: UIView) {
+        view.snp.makeConstraints {
+            $0.width.equalToSuperview()
+        }
     }
 }
 
