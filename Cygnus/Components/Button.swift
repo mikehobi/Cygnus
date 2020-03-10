@@ -5,6 +5,7 @@
 
 import BonMot
 import UIKit
+import SnapKit
 
 public class Button: UIButton {
     public struct Options {

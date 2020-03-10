@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import SnapKit
 
 public class Row: View {
     override func setupDefaults() {

@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import SnapKit
 
 public class Col: View {
     override func setupDefaults() {

@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import SnapKit
 
 public class View: UIView {
     public struct Options {
