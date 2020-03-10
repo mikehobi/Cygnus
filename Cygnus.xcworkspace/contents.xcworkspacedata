@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Carthage/Checkouts/SnapKit/SnapKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/BonMot/BonMot.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:/Users/mikehobizal/fun/Cygnus/Cygnus.xcodeproj">
    </FileRef>
 </Workspace>
