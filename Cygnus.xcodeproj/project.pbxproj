@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E11095524183313002B69BC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E11094B2418307E002B69BC /* SnapKit.framework */; };
+		7E11095524183313002B69BC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E11094B2418307E002B69BC /* SnapKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Required, ); }; };
+		7E11095A241836A2002B69BC /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E11094B2418307E002B69BC /* SnapKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EAF8E6123032AAA006A518F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5A84122B9AE6400B4F27F /* View.swift */; };
 		7EC5A83522B9AE5100B4F27F /* Cygnus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC5A83322B9AE5100B4F27F /* Cygnus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -19,6 +20,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7E11095A241836A2002B69BC /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
