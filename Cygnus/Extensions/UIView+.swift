@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIView {
+internal extension UIView {
     func snapshot(bounds: CGRect? = nil) -> UIImageView {
         let renderBounds = bounds ?? self.bounds
         let renderer = UIGraphicsImageRenderer(bounds: renderBounds)

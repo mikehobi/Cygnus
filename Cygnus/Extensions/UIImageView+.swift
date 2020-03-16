@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIImageView {
+internal extension UIImageView {
 
     func sizeToSuperview() {
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIImage {
+internal extension UIImage {
     func getRatio() -> CGFloat {
         return self.size.height / self.size.width
     }
