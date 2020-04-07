@@ -93,9 +93,9 @@ open class StackViewController: UIViewController {
     }
 
     // Views
-    let scroll = UIScrollView()
+    public let scroll = UIScrollView()
 
-    let stack = UIStackView()
+    public let stack = UIStackView()
 
     // Init
     public init(_ views: [UIView], options: [StackViewControllerOptions.Part]) {
